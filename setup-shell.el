@@ -30,4 +30,5 @@
           (lambda ()
             (define-key shell-mode-map (kbd "C-d") 'comint-delchar-or-eof-or-kill-buffer)))
 
+(setenv "ESHELL" (expand-file-name "~/bin/eshell"))
 (provide 'setup-shell)

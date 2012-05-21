@@ -12,6 +12,7 @@
 ;; Set up load path
 (add-to-list 'load-path dotfiles-dir)
 (add-to-list 'load-path site-lisp-dir)
+(add-to-list 'load-path "~/.emacs.d/vendor/coffee-mode")
 
 ;; Settings for currently logged in user
 (setq user-settings-dir (concat user-emacs-directory "users/" user-login-name))
@@ -53,6 +54,16 @@
 (require 'setup-shell)
 (require 'setup-wrap-region)
 (require 'setup-ffip)
+(require 'setup-haml-mode)
+(require 'setup-sass-mode)
+(require 'coffee-mode)
+(defun coffee-custom ()
+  "coffee-mode-hook"
+ (set (make-local-variable 'tab-width) 2))
+
+(add-hook 'coffee-mode-hook
+  '(lambda() (coffee-custom)))
+;;(require 'setup-autopair) -- could this be the culprit in delete-selection-mode failures?
 
 ;; Map files to modes
 (require 'mode-mappings)
