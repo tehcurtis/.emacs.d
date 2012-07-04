@@ -12,7 +12,6 @@
 ;; Set up load path
 (add-to-list 'load-path dotfiles-dir)
 (add-to-list 'load-path site-lisp-dir)
-(add-to-list 'load-path "~/.emacs.d/vendor/coffee-mode")
 
 ;; Settings for currently logged in user
 (setq user-settings-dir (concat user-emacs-directory "users/" user-login-name))
