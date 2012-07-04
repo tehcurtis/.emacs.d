@@ -62,7 +62,6 @@
 
 (add-hook 'coffee-mode-hook
   '(lambda() (coffee-custom)))
-;;(require 'setup-autopair) -- could this be the culprit in delete-selection-mode failures?
 
 ;; Map files to modes
 (require 'mode-mappings)
