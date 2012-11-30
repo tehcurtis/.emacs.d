@@ -67,8 +67,8 @@
 (require 'mode-mappings)
 
 ;; Annoying arrows mode
-(require 'annoying-arrows-mode)
-(global-annoying-arrows-mode)
+;; (require 'annoying-arrows-mode)
+;; (global-annoying-arrows-mode)
 
 ;; Functions (load all files in defuns-dir)
 (setq defuns-dir (expand-file-name "defuns" dotfiles-dir))
@@ -117,6 +117,9 @@
 (require 'diminish)
 (diminish 'wrap-region-mode)
 (diminish 'yas/minor-mode)
+
+;; electric pair mode
+(setq electric-pair-mode t)
 
 ;; Conclude init by setting up specifics for the current user
 (when (file-exists-p user-settings-dir)
