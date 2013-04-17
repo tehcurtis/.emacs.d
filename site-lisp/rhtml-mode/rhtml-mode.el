@@ -1,6 +1,4 @@
-;;;
-;;; rhtml-mode.el - major mode for editing RHTML files
-;;;
+;;; rhtml-mode.el --- major mode for editing RHTML files
 
 ;; ***** BEGIN LICENSE BLOCK *****
 ;; Version: MPL 1.1/GPL 2.0/LGPL 2.1
@@ -45,6 +43,7 @@
 ;; don't require if you don't want it...
 (require 'rhtml-sgml-hacks) ;; indent erb with sgml
 
+;;;###autoload
 (define-derived-mode rhtml-mode
   html-mode "RHTML"
   "Embedded Ruby Mode (RHTML)"
@@ -53,6 +52,7 @@
   ;; disable if you don't want it...
   (rhtml-activate-fontification))
 
+;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.html\\.erb$" . rhtml-mode))
 
 (define-key ruby-mode-map
