@@ -73,10 +73,6 @@
 (autoload 'markdown-mode "markdown-mode")
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 
-;; PHP
-(autoload 'php-mode "php-mode")
-(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
-
 ;; org-mode
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 
