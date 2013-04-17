@@ -31,9 +31,6 @@
 [submodule "site-lisp/expand-region"]
         path = site-lisp/expand-region
         url = https://github.com/magnars/expand-region.el.git
-[submodule "site-lisp/php-mode"]
-        path = site-lisp/php-mode
-        url = https://github.com/ejmr/php-mode.git
 [submodule "site-lisp/perspective"]
         path = site-lisp/perspective
         url = https://github.com/magnars/perspective-el.git
@@ -95,5 +92,5 @@
         path = coffee-mode
         url = git://github.com/defunkt/coffee-mode.git
 [submodule "site-lisp/coffee-mode"]
-	path = site-lisp/coffee-mode
-	url = git://github.com/defunkt/coffee-mode.git
+        path = site-lisp/coffee-mode
+        url = git://github.com/defunkt/coffee-mode.git
