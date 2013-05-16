@@ -55,6 +55,7 @@
 (require 'setup-ffip)
 (require 'setup-haml-mode)
 (require 'setup-sass-mode)
+(require 'setup-rspec-mode)
 (require 'coffee-mode)
 (defun coffee-custom ()
   "coffee-mode-hook"
